@@ -150,3 +150,144 @@
         color: $accent-color;
     }
 }
+
+.mob-menu {
+    width: 480px;
+    height: 796px;
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    right: 0;
+    padding: 15px 10px 48px 40px;
+    z-index: 999;
+
+    &-list {
+        margin-bottom: 302px;
+
+
+
+        &__social {
+            margin-top: 60px;
+            display: flex;
+
+            & #skobka {
+                margin-left: 10px;
+                color: #21212133;
+
+
+                transform: rotate(90deg);
+            }
+
+            &-item:not(:last-child) {
+                margin-right: 10px;
+
+            }
+
+            & .link {
+                font-size: 18px;
+                line-height: 22px;
+                letter-spacing: 0.02em;
+                color: $accent-color;
+
+                &:hover,
+                &:focus {
+                    color: $accent-color;
+                }
+            }
+
+
+        }
+
+        &__tel {
+            font-size: 34px;
+            line-height: 1.8;
+            letter-spacing: 0.02em;
+            color: #757575;
+
+            &:hover,
+            &:focus {
+                color: $accent-color;
+            }
+        }
+
+        &__mail {
+            font-size: 24px;
+            line-height: 1.17;
+            letter-spacing: 0.02em;
+
+            color: #757575;
+
+            &:hover,
+            &:focus {
+                color: $accent-color;
+            }
+
+
+        }
+
+
+        &__link {
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 1.8;
+            letter-spacing: 0.02em;
+
+            color: #212121;
+
+            &:hover,
+            &:focus {
+                color: $accent-color;
+            }
+
+            &--current {
+                color: $accent-color;
+            }
+        }
+    }
+}
+
+.menu-open {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    color: #212121;
+    border: none;
+    margin-left: auto;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        fill: $accent-color;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.menu-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: transparent;
+    color: #212121;
+    border: none;
+    margin-left: auto;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        fill: $accent-color;
+    }
+}
+
+
+.mob-menu.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}

@@ -1,7 +1,15 @@
 .buttons-list {
+    @media screen and (min-width:1200px) {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom:40px;
+
 
     &__btns {
         display: inline-block;
@@ -34,16 +42,27 @@
         align-items: center;
     }
 
+    @media screen and (min-width:1200px) {
+        &__item:not(:last-child) {
+            margin-right: 8px;
+        }
+    }
+
     &__item:not(:last-child) {
         margin-right: 8px;
+        margin-bottom: 15px;
     }
 }
 
 .projects {
     align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    height: 1360px;
+
+    @media screen and (min-width:1200px) {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        height: 1360px;
+    }
 
     &__item:hover &-overlay {
         transform: translateY(0);
