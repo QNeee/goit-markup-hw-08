@@ -128,12 +128,16 @@
     }
 
     &__item:not(:last-child) {
-        margin-right: 30px;
+        margin-bottom: 30px;
     }
 
-    &__item {
-        margin-bottom: 30px;
-        transition: color $wait $caubic, box-shadow $wait $caubic;
+    @media screen and (min-width:1200px) {
+
+
+        &__item {
+            margin-bottom: 30px;
+            transition: color $wait $caubic, box-shadow $wait $caubic;
+        }
     }
 
     &__item:nth-child(3n + 3) {
