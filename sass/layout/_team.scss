@@ -1,0 +1,96 @@
+.team {
+    padding-top: 94px;
+    background-color: $primary-bcg;
+
+    &-list {
+        display: flex;
+    }
+
+    &-list h3 {
+        padding-top: 30px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
+
+    &-list p {
+        margin-top: 10px;
+        margin-bottom: 16px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $secondary-text;
+    }
+
+    &-list__item {
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+        margin-bottom: 94px;
+        border-radius: 0px 0px 4px 4px;
+        width: 270px;
+        height: 428px;
+
+        background-color: $filter-secondarycolor;
+    }
+
+    &-list__item:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &__wraper:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    &-icons {
+        display: flex;
+        list-style-type: none;
+        width: 206px;
+        height: 44px;
+
+        &--command {
+            margin-left: 32px;
+            margin-top: 16px;
+        }
+
+        &--basement {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+
+
+    &-icon {
+        width: 20px;
+        height: 20px;
+        margin: 12px;
+        fill: currentColor;
+
+    }
+
+}
+
+
+.social-link {
+    width: 44px;
+    height: 44px;
+    display: block;
+    border-radius: 50%;
+    color: #afb1b8;
+    transition: background-color $wait $caubic, color $wait $caubic;
+
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        color: $filter-secondarycolor;
+    }
+}

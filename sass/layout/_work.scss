@@ -1,0 +1,36 @@
+.work-list {
+    display: flex;
+
+    &__title {
+        position: absolute;
+        left: 0;
+        top: 225px;
+        width: 370px;
+        height: 70px;
+        background: rgba(47, 48, 58, 0.8);
+        padding: 27px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &__item {
+        position: relative;
+    }
+}
+
+.work-section {
+    padding-bottom: 94px;
+}
+
+.work-titles .lst {
+    position: relative;
+}

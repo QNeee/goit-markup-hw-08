@@ -1,0 +1,142 @@
+.header {
+
+    border: 1px solid #ececec;
+    background-color: $filter-secondarycolor;
+}
+
+.header-nav {
+    &logo {
+        margin: auto;
+    }
+}
+
+.nav-flex {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    align-items: center;
+    text-align: center;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+    &-white {
+        color: $filter-secondarycolor;
+    }
+
+    &-black {
+        color: $primary-text;
+    }
+
+    &-web {
+        color: $accent-color;
+    }
+}
+
+.site-nav {
+    display: flex;
+    margin-left: 93px;
+
+
+    &__item {
+        position: relative;
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        margin-right: 50px;
+    }
+
+    &__item:last-child {
+        margin-right: 0px;
+    }
+
+    &__link {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: $primary-text;
+        text-decoration: none;
+        transition: color $wait $caubic;
+
+        &:hover,
+        &:focus {
+
+            color: $accent-color;
+        }
+    }
+
+    &__link--current {
+        color: $accent-color;
+        transition: color $wait $caubic;
+
+    }
+
+    &__link--current::after {
+        color: $accent-color;
+        position: absolute;
+        content: '';
+        top: 100%;
+        width: 100%;
+        display: block;
+        height: 3px;
+        background-color: $accent-color;
+        border-radius: 3px;
+    }
+}
+
+.contact-list {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    margin-left: 318px;
+    align-items: center;
+
+    &__item {
+        margin-right: 30px;
+        width: 161px;
+    }
+
+    &__item:last-child {
+        margin-right: 0px;
+    }
+
+    &__item1 {
+        width: 142px;
+    }
+
+    &__link {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: $secondary-text;
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    &__icon {
+        margin-right: 10px;
+        fill: currentColor;
+        transition: color $wait $caubic;
+    }
+
+    &__icon:hover,
+    &__icon:focus,
+    &__link:hover,
+    &__link:focus {
+        color: $accent-color;
+    }
+}

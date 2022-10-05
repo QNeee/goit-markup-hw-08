@@ -1,0 +1,150 @@
+.footer {
+  height: 252px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $footer-bcg;
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    margin: 12px;
+    fill: currentColor;
+  }
+
+  &-flex {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &-icons {
+    display: flex;
+    padding: 0;
+    margin-top: 0;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-link {
+    color: #ffffff;
+    background-color: #ffffff10;
+    transition: background-color $wait $caubic, color $wait $caubic;
+  }
+
+
+  .subscribe-flex {
+    margin-left: 93px;
+
+    &__submit-input {
+      width: 358px;
+      height: 50px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+      background-color: transparent;
+      color: white;
+      padding-left: 16px;
+    }
+
+    &__submit-input::placeholder {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.25;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.03em;
+
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &__submit-button {
+      display: inline-flex;
+      align-items: center;
+      border: none;
+      border-radius: 4px;
+
+      background-color: $accent-color;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      color: $filter-secondarycolor;
+
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.87;
+      letter-spacing: 0.06em;
+
+      cursor: pointer;
+      width: 200px;
+      height: 50px;
+      margin-left: 12px;
+      padding-left: 28px;
+      transition: $wait $caubic;
+
+      &:hover,
+      &:focus {
+        background-color: #188ce8;
+        color: white;
+      }
+    }
+  }
+}
+
+
+
+
+.adress-list {
+  padding-top: 20px;
+
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+
+    color: $footer-linkcolor;
+    transition: color $wait $caubic;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+}
+
+.link1 {
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+
+  color: $filter-secondarycolor;
+}
+
+.social-flex {
+  height: 80px;
+  margin-left: 70px;
+}
+
+.social-flex__text {
+  padding: 20px 0px 10px 0px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14px;
+  text-transform: uppercase;
+  color: $primary-bcg;
+}
