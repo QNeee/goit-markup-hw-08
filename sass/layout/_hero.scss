@@ -1,34 +1,60 @@
 .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
 
-    max-width: 1600px;
-    min-height: 600px;
+    width: 480px;
+    height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     margin-left: auto;
     margin-right: auto;
-
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/cap.jpg);
-    background-color: var(--hero-bcg);
+        url(../images/cap1.jpg);
+    background-color: $hero-bcg;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
     text-align: center;
 
-    &__title {
-        margin-bottom: 30px;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 696px;
+    @media screen and (min-width:1200px) {
 
+
+        padding-top: 200px;
+        padding-bottom: 200px;
+
+        max-width: 1600px;
+        min-height: 600px;
+
+
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/cap.jpg);
+
+    }
+
+    &__title {
         font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
+        font-size: 26px;
+        line-height: 1.62;
+
+        text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
 
-        color: $filter-secondarycolor;
+        color: #FFFFFF;
+
+        @media screen and (min-width:1200px) {
+            margin-bottom: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 696px;
+
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 1.36;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+
+            color: $filter-secondarycolor;
+        }
     }
 
 }

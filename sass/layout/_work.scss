@@ -1,5 +1,9 @@
 .work-list {
+
     display: flex;
+
+
+
 
     &__title {
         position: absolute;
@@ -28,6 +32,7 @@
 }
 
 .work-section {
+    display: none;
     padding-bottom: 94px;
 }
 

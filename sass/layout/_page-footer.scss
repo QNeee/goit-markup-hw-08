@@ -1,9 +1,13 @@
 .footer {
-  height: 252px;
   padding-top: 60px;
   padding-bottom: 60px;
-
+  text-align: center;
   background-color: $footer-bcg;
+
+  @media screen and (min-width:1200px) {
+    height: 252px;
+
+  }
 
   &__icon {
     width: 24px;
@@ -13,7 +17,11 @@
   }
 
   &-flex {
-    display: flex;
+    @media screen and (min-width:1200px) {
+      display: flex;
+    }
+
+
     margin: 0;
     padding: 0;
     list-style: none;
@@ -36,7 +44,11 @@
 
 
   .subscribe-flex {
-    margin-left: 93px;
+    margin-top: 60px;
+
+    @media screen and (min-width:1200px) {
+      margin-left: 93px;
+    }
 
     &__submit-input {
       width: 358px;
@@ -47,6 +59,9 @@
       background-color: transparent;
       color: white;
       padding-left: 16px;
+      margin-bottom: 20px;
+
+      @media screen and (min-width:1200px) {}
     }
 
     &__submit-input::placeholder {
@@ -97,6 +112,7 @@
 
 
 .adress-list {
+
   padding-top: 20px;
 
   &__item:not(:last-child) {
@@ -135,8 +151,12 @@
 }
 
 .social-flex {
-  height: 80px;
-  margin-left: 70px;
+  margin-top: 60px;
+
+  @media screen and (min-width:1200px) {
+    height: 80px;
+    margin-left: 70px;
+  }
 }
 
 .social-flex__text {

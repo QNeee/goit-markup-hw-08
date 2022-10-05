@@ -41,8 +41,12 @@
 }
 
 .site-nav {
-    display: flex;
-    margin-left: 93px;
+    @media screen and (min-width:1200px) {
+        display: flex;
+        margin-left: 93px;
+    }
+
+    display: none;
 
 
     &__item {
@@ -95,11 +99,17 @@
 }
 
 .contact-list {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    display: flex;
-    margin-left: 318px;
-    align-items: center;
+    @media screen and (min-width:1200px) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        display: flex;
+        margin-left: 318px;
+        align-items: center;
+    }
+
+    display: none;
+
+
 
     &__item {
         margin-right: 30px;

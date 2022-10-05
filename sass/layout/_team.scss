@@ -1,9 +1,21 @@
 .team {
-    padding-top: 94px;
     background-color: $primary-bcg;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width:1200px) {
+        padding-top: 94px;
+    }
 
     &-list {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (min-width:1200px) {
+            display: flex;
+        }
     }
 
     &-list h3 {
@@ -15,6 +27,7 @@
         line-height: 1.19;
         text-align: center;
         letter-spacing: 0.03em;
+
     }
 
     &-list p {
@@ -31,38 +44,57 @@
     }
 
     &-list__item {
+        width: 450px;
+        height: 622px;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
             0px 2px 1px rgba(0, 0, 0, 0.2);
-        margin-bottom: 94px;
         border-radius: 0px 0px 4px 4px;
-        width: 270px;
-        height: 428px;
-
         background-color: $filter-secondarycolor;
+
+
+
+
+
+        @media screen and (min-width:1200px) {
+            margin-bottom: 94px;
+            width: 270px;
+            height: 428px;
+        }
     }
 
     &-list__item:not(:last-child) {
-        margin-right: 30px;
+        margin-bottom: 30px;
     }
 
     &__wraper:not(:last-child) {
         margin-right: 10px;
     }
 
+    @media screen and (min-width:1200px) {
+        &-list__item:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
     &-icons {
         display: flex;
-        list-style-type: none;
-        width: 206px;
-        height: 44px;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 32px;
+        margin-top: 16px;
+        list-style: none;
 
-        &--command {
-            margin-left: 32px;
-            margin-top: 16px;
-        }
 
-        &--basement {
-            margin: 0;
-            padding: 0;
+        @media screen and (min-width:1200px) {
+            &--command {
+                margin-left: 32px;
+                margin-top: 16px;
+            }
+
+            &--basement {
+                margin: 0;
+                padding: 0;
+            }
         }
     }
 
