@@ -27,6 +27,11 @@ ul {
   padding-right: 15px;
   /* outline: 2px solid tomato; */
 }
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -228,6 +233,16 @@ ul {
 }
 .contact-list__item1 {
   width: 142px;
+}
+@media screen and (min-width: 768px) {
+  .contact-list__item1 {
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-list__item1 {
+    margin-top: 0px;
+  }
 }
 .contact-list__link {
   font-family: "Roboto";
@@ -593,6 +608,28 @@ ul {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 480px) {
+  .team-list__social {
+    width: 206px;
+    height: 44px;
+    margin: auto;
+    padding-top: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team-list__social {
+    width: 206px;
+    height: 44px;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list__social {
+    width: 206px;
+    height: 44px;
+    margin: auto;
+  }
+}
 @media screen and (min-width: 768px) {
   .team-list {
     display: block;
@@ -658,17 +695,15 @@ ul {
 }
 .team-icons {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0px 32px;
-  margin-top: 16px;
-  list-style: none;
+  list-style-type: none;
+  width: 206px;
+  height: 44px;
+  margin: auto;
 }
-@media screen and (min-width: 1200px) {
-  .team-icons--basement {
-    margin: 0;
-    padding: 0;
-  }
+.team-icons--basement .team__link {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.062745098);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-icon {
   width: 20px;
@@ -701,6 +736,19 @@ ul {
     width: 270px;
     height: 260px;
   }
+}
+
+.team__link {
+  width: 44px;
+  height: 44px;
+  display: block;
+  border-radius: 50%;
+  color: #afb1b8;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team__link:hover, .team__link:focus {
+  background-color: #2196f3;
+  color: #ffffff;
 }
 
 @media screen and (min-width: 480px) {
@@ -1005,6 +1053,98 @@ ul {
   padding: 40px;
   width: 450px;
 }
+.form__comment-label {
+  margin-top: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.form__comment {
+  padding: 12px 16px;
+  margin-top: 4px;
+  width: 370px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.67;
+  letter-spacing: 0.01em;
+  color: rgb(117, 117, 117);
+  resize: none;
+}
+@media screen and (min-width: 1200px) {
+  .form__comment {
+    width: 448px;
+    height: 120px;
+  }
+}
+.form__comment:hover, .form__comment:focus {
+  outline: none;
+  border-color: #2196f3;
+}
+.form__label {
+  margin-top: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.form__input {
+  position: relative;
+  margin-bottom: 10px;
+  width: 370px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 40px;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .form__input {
+    width: 448px;
+    height: 40px;
+  }
+}
+.form__input:hover, .form__input:focus {
+  outline: none;
+  border-color: #2196f3;
+}
+.form__name-icon {
+  margin-left: 5px;
+  position: absolute;
+  top: 126px;
+  left: 50px;
+  width: 18px;
+  height: 18px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__phone-icon {
+  margin-left: 5px;
+  position: absolute;
+  left: 50px;
+  top: 195px;
+  width: 18px;
+  height: 18px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__mail-icon {
+  margin-left: 5px;
+  position: absolute;
+  left: 50px;
+  top: 265px;
+  width: 18px;
+  height: 18px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__input:hover ~ .form__name-icon, .form__input:focus ~ .form__name-icon, .form__input:hover ~ .form__phone-icon, .form__input:focus ~ .form__phone-icon, .form__input:hover ~ .form__mail-icon, .form__input:focus ~ .form__mail-icon {
+  fill: #2196f3;
+}
 .form__button {
   margin-top: 30px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1023,105 +1163,17 @@ ul {
 .form__list {
   margin-top: 12px;
 }
-.form__list__comment-label {
-  margin-top: 4px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: #757575;
-}
-.form__list__comment {
-  padding: 12px 16px;
-  margin-top: 4px;
-  width: 370px;
-  height: 120px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.67;
-  letter-spacing: 0.01em;
-  color: rgb(117, 117, 117);
-  resize: none;
-}
-@media screen and (min-width: 1200px) {
-  .form__list__comment {
-    width: 448px;
-    height: 120px;
-  }
-}
-.form__list__comment:hover, .form__list__comment:focus {
-  outline: none;
-  border-color: #2196f3;
-}
-.form__list__label {
-  margin-top: 4px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: #757575;
-}
-.form__list__input {
-  position: relative;
-  margin-bottom: 10px;
-  width: 370px;
-  height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  padding-left: 40px;
-  cursor: pointer;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media screen and (min-width: 1200px) {
-  .form__list__input {
-    width: 448px;
-    height: 40px;
-  }
-}
-.form__list__input:hover, .form__list__input:focus {
-  outline: none;
-  border-color: #2196f3;
-}
-.form__list__name-icon {
-  margin-left: 5px;
-  position: absolute;
-  top: 126px;
-  left: 50px;
-  width: 18px;
-  height: 18px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.form__list__phone-icon {
-  margin-left: 5px;
-  position: absolute;
-  left: 50px;
-  top: 195px;
-  width: 18px;
-  height: 18px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.form__list__mail-icon {
-  margin-left: 5px;
-  position: absolute;
-  left: 50px;
-  top: 265px;
-  width: 18px;
-  height: 18px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.form__list__input:hover ~ .form__list__name-icon, .form__list__input:focus ~ .form__list__name-icon, .form__list__input:hover ~ .form__list__phone-icon, .form__list__input:focus ~ .form__list__phone-icon, .form__list__input:hover ~ .form__list__mail-icon, .form__list__input:focus ~ .form__list__mail-icon {
-  fill: #2196f3;
-}
 
-.form__policy {
+.policy {
   text-align: center;
   margin-top: 20px;
-  justify-content: flex-start;
 }
-.form__policy__checkbox:checked + .form__policy__icon-check {
+@media screen and (min-width: 1200px) {
+  .policy {
+    align-items: center;
+  }
+}
+.policy__checkbox:checked + .policy__icon-check {
   background-image: url(../images/check.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -1130,15 +1182,15 @@ ul {
   border-color: #2196f3;
   color: white;
 }
-.form__policy__link {
+.policy__link {
   margin-left: 4px;
   color: #2196f3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form__policy__link:hover, .form__policy__link:focus {
+.policy__link:hover, .policy__link:focus {
   color: #212121;
 }
-.form__policy__label {
+.policy__label {
   display: flex;
   height: 14px;
   font-size: 12px;
@@ -1147,21 +1199,16 @@ ul {
   letter-spacing: 0.03em;
   color: #757575;
 }
-@media screen and (min-width: 1200px) {
-  .form__policy__label {
-    justify-content: center;
-    width: 400px;
-  }
-}
-.form__policy__checkbox {
+.policy__checkbox {
   appearance: none;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  align-items: center;
   color: #757575;
 }
-.form__policy__icon-check {
+.policy__icon-check {
   position: relative;
   top: 2px;
   display: inline-block;
