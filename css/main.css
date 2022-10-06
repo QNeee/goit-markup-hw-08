@@ -1137,14 +1137,18 @@ textarea::placeholder {
   position: absolute;
   top: 0;
   left: 0;
-  width: 322px;
-  height: 168px;
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.03em;
   color: #ffffff;
   padding: 63px 24px;
+}
+@media screen and (min-width: 1200px) {
+  .projects-overlay__text {
+    width: 322px;
+    height: 168px;
+  }
 }
 .projects__item:not(:last-child) {
   margin-bottom: 30px;

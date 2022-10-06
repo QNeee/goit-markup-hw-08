@@ -112,11 +112,15 @@
         transition: transform $wait $caubic;
 
         &__text {
+            @media screen and (min-width:1200px) {
+                width: 322px;
+                height: 168px;
+
+            }
+
             position: absolute;
             top: 0;
             left: 0;
-            width: 322px;
-            height: 168px;
             font-weight: 400;
             font-size: 18px;
             line-height: 28px;
