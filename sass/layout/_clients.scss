@@ -16,8 +16,7 @@
     padding: 0;
     margin: 0;
     list-style: none;
-    justify-content: space-between;
-    align-items: center;
+
   }
 
   &__item:not(:last-child) {
@@ -25,7 +24,7 @@
     margin-right: 30px;
   }
 
-  @media screen and (min-width:768px) {
+  @media screen and (max-width:768px) {
     &__item:nth-child(3n + 3) {
       margin-right: 0px;
     }
@@ -47,6 +46,8 @@
     }
 
     @media screen and (min-width:1200px) {
+      width: 170px;
+      height: 92px;
       padding: 16px 32px;
     }
 

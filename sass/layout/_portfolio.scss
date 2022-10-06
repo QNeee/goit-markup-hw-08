@@ -1,14 +1,16 @@
 .buttons-list {
-    @media screen and (min-width:1200px) {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 50px;
-    }
+
 
     @media screen and (min-width:768px) {
         display: flex;
         justify-content: center;
         margin-bottom: 30px;
+    }
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
     }
 
     display: flex;
@@ -84,10 +86,6 @@
         flex-wrap: wrap;
     }
 
-    &__item:not(:last-child) {
-        margin-bottom: 30px;
-    }
-
     @media screen and (min-width:768px) {
         &__item:not(:last-child) {
             margin-right: 30px;
@@ -101,11 +99,14 @@
     }
 
     @media screen and (min-width:1200px) {
+        &__item:not(:last-child) {
+            margin-right: 30px;
 
+        }
 
-        &__item {
-            margin-bottom: 30px;
-            transition: color $wait $caubic, box-shadow $wait $caubic;
+        &__item:nth-child(3n + 3) {
+
+            margin-right: 0px;
         }
     }
 
@@ -122,6 +123,7 @@
             width: 354px;
             height: 146px;
         }
+
 
         &__title {
 
@@ -163,6 +165,8 @@
         transition: transform $wait $caubic;
 
         &__text {
+
+
             @media screen and (min-width:1200px) {
                 width: 322px;
                 height: 168px;
@@ -182,7 +186,25 @@
         }
     }
 
+    &__item:not(:last-child) {
+        margin-bottom: 30px;
+    }
 
+
+
+    &__item {
+        margin-bottom: 30px;
+        transition: color $wait $caubic, box-shadow $wait $caubic;
+    }
+
+
+
+    @media screen and (min-width:1200px) {
+        &__item:nth-child(3n + 3) {
+
+            margin-right: 0px;
+        }
+    }
 
 
 

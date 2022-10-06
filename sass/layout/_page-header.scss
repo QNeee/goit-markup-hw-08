@@ -147,6 +147,10 @@
             line-height: 1.14;
         }
 
+        @media screen and (min-width:1200px) {
+            font-size: 14px;
+        }
+
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 500;

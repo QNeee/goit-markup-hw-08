@@ -247,6 +247,11 @@ ul {
     line-height: 1.14;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contact-list__link {
+    font-size: 14px;
+  }
+}
 .contact-list__icon {
   margin-right: 10px;
   fill: currentColor;
@@ -364,34 +369,48 @@ ul {
 }
 
 .hero {
-  width: 480px;
-  height: 400px;
-  padding-top: 118px;
-  padding-bottom: 118px;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/cap1.jpg);
-  background-color: #2f303a;
+  background-color: var(--hero-background-color);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/cap-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
-  text-align: center;
+  background-position: center;
+  height: 400px;
+  padding-top: 118px;
+  padding-bottom: 0px;
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/cap-mobile.jpg");
+  }
 }
 @media screen and (min-width: 768px) {
   .hero {
-    padding-top: 118px;
-    padding-bottom: 118px;
-    width: 768px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/cap2.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/cap-tablet.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/cap-tablet2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/cap-desktop.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/cap-desctop2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
     max-width: 1600px;
-    min-height: 600px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/cap.jpg);
+    height: 600px;
+    padding-top: 200px;
   }
 }
 .hero__title {
@@ -415,14 +434,11 @@ ul {
 @media screen and (min-width: 1200px) {
   .hero__title {
     margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 696px;
+    width: 696px;
+    height: 120px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
     color: #ffffff;
   }
 }
@@ -549,8 +565,12 @@ ul {
 }
 
 .work-section {
-  display: none;
   padding-bottom: 94px;
+}
+@media screen and (max-width: 1199px) {
+  .work-section {
+    display: none;
+  }
 }
 
 .work-titles .lst {
@@ -607,6 +627,9 @@ ul {
   color: #757575;
 }
 .team-list__item {
+  margin-bottom: 30px;
+}
+.team-list__item {
   width: 450px;
   height: 622px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -621,13 +644,9 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .team-list__item {
-    margin-bottom: 94px;
     width: 270px;
     height: 428px;
   }
-}
-.team-list__item:not(:last-child) {
-  margin-bottom: 30px;
 }
 .team__wraper:not(:last-child) {
   margin-right: 10px;
@@ -646,10 +665,6 @@ ul {
   list-style: none;
 }
 @media screen and (min-width: 1200px) {
-  .team-icons--command {
-    margin-left: 32px;
-    margin-top: 16px;
-  }
   .team-icons--basement {
     margin: 0;
     padding: 0;
@@ -681,6 +696,12 @@ ul {
     height: 374px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .image-thumb {
+    width: 270px;
+    height: 260px;
+  }
+}
 
 @media screen and (min-width: 480px) {
   .client-list {
@@ -701,15 +722,13 @@ ul {
     padding: 0;
     margin: 0;
     list-style: none;
-    justify-content: space-between;
-    align-items: center;
   }
 }
 .client-list__item:not(:last-child) {
   margin-bottom: 30px;
   margin-right: 30px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .client-list__item:nth-child(3n+3) {
     margin-right: 0px;
   }
@@ -732,6 +751,8 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .client-list__link {
+    width: 170px;
+    height: 92px;
     padding: 16px 32px;
   }
 }
@@ -752,6 +773,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .footer {
     height: 252px;
+    text-align: start;
   }
 }
 .footer__icon {
@@ -796,6 +818,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .footer .subscribe-flex {
+    margin: 0;
     margin-left: 93px;
   }
 }
@@ -809,6 +832,11 @@ ul {
   color: white;
   padding-left: 16px;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer .subscribe-flex__submit-input {
+    margin-bottom: 0;
+  }
 }
 .footer .subscribe-flex__submit-input::placeholder {
   font-weight: 400;
@@ -907,6 +935,12 @@ ul {
   .tablet-flex {
     display: flex;
     justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .desktop-flex {
+    display: inline-flex;
   }
 }
 
@@ -1060,12 +1094,6 @@ ul {
   height: 18px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 1200px) {
-  .form__list__name-icon {
-    top: 105px;
-    left: 50px;
-  }
-}
 .form__list__phone-icon {
   margin-left: 5px;
   position: absolute;
@@ -1075,12 +1103,6 @@ ul {
   height: 18px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 1200px) {
-  .form__list__phone-icon {
-    left: 50px;
-    top: 172px;
-  }
-}
 .form__list__mail-icon {
   margin-left: 5px;
   position: absolute;
@@ -1089,12 +1111,6 @@ ul {
   width: 18px;
   height: 18px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media screen and (min-width: 1200px) {
-  .form__list__mail-icon {
-    left: 50px;
-    top: 240px;
-  }
 }
 .form__list__input:hover ~ .form__list__name-icon, .form__list__input:focus ~ .form__list__name-icon, .form__list__input:hover ~ .form__list__phone-icon, .form__list__input:focus ~ .form__list__phone-icon, .form__list__input:hover ~ .form__list__mail-icon, .form__list__input:focus ~ .form__list__mail-icon {
   fill: #2196f3;
@@ -1131,6 +1147,12 @@ ul {
   letter-spacing: 0.03em;
   color: #757575;
 }
+@media screen and (min-width: 1200px) {
+  .form__policy__label {
+    justify-content: center;
+    width: 400px;
+  }
+}
 .form__policy__checkbox {
   appearance: none;
   font-weight: 400;
@@ -1160,18 +1182,18 @@ textarea::placeholder {
   justify-content: flex-start;
   margin-bottom: 40px;
 }
-@media screen and (min-width: 1200px) {
-  .buttons-list {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-  }
-}
 @media screen and (min-width: 768px) {
   .buttons-list {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .buttons-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
   }
 }
 .buttons-list__btns {
@@ -1231,9 +1253,6 @@ textarea::placeholder {
     flex-wrap: wrap;
   }
 }
-.projects__item:not(:last-child) {
-  margin-bottom: 30px;
-}
 @media screen and (min-width: 768px) {
   .projects__item:not(:last-child) {
     margin-right: 30px;
@@ -1243,9 +1262,11 @@ textarea::placeholder {
   }
 }
 @media screen and (min-width: 1200px) {
-  .projects__item {
-    margin-bottom: 30px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .projects__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .projects__item:nth-child(3n+3) {
+    margin-right: 0px;
   }
 }
 .projects__item:hover .projects-overlay {
@@ -1309,6 +1330,18 @@ textarea::placeholder {
   .projects-overlay__text {
     width: 322px;
     height: 168px;
+  }
+}
+.projects__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+.projects__item {
+  margin-bottom: 30px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .projects__item:nth-child(3n+3) {
+    margin-right: 0px;
   }
 }
 .projects__item:hover, .projects-overlay:focus {
