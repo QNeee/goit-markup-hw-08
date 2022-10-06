@@ -196,11 +196,12 @@
             <!--team card 1-->
             <li class="team-list__item lst">
               <img
+                class="image-thumb"
                 srcset="
                   ./images/mobile-product-designer.jpg    1x,
                   ./images/mobile-product-designer-2x.jpg 2x
                 "
-                src="./images/img.jpg"
+                src="./images/mobile-product-designer.jpg"
                 alt="man"
                 width="450"
               />
@@ -240,11 +241,12 @@
             <!--team card 2-->
             <li class="team-list__item lst">
               <img
+                class="image-thumb"
                 srcset="
                   ./images/mobile-frontend-developer.jpg    1x,
                   ./images/mobile-frontend-developer-2x.jpg 2x
                 "
-                src="./images/img1.jpg"
+                src="./images/mobile-frontend-developer.jpg"
                 alt="woman"
                 width="450"
               />
@@ -284,8 +286,9 @@
             <!--team card 3-->
             <li class="team-list__item lst">
               <img
+                class="image-thumb"
                 srcset="./images/mobile-marketing.jpg 1x, ./images/mobile-marketing-2x.jpg 2x"
-                src="./images/img2.jpg"
+                src="./images/mobile-marketing.jpg.jpg"
                 alt="man1"
                 width="450"
               />
@@ -325,6 +328,7 @@
             <!--team card 4-->
             <li class="team-list__item lst">
               <img
+                class="image-thumb"
                 srcset="./images/mobile-ui-designer 1x, ./images/mobile-ui-designer-2x.jpg 2x"
                 src="./images/mobile-ui-designer.jpg"
                 alt="man2"
@@ -426,62 +430,66 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-flex">
-          <div class="contacts-flex">
-            <a href="index.html" class="logo logo-white"><span class="logo-web">Web</span>Studio</a>
-            <address class="footer-adress">
-              <ul class="adress-list">
-                <li class="adress-list__item lst">
-                  <a
-                    href="https://www.google.com.ua/maps/@50.4851493,30.4721233,14z?hl=ru"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="link1"
-                    >м. Київ, пр-т Лесі Українки, 26</a
-                  >
+          <div class="tablet-flex">
+            <div class="contacts-flex">
+              <a href="index.html" class="logo logo-white"
+                ><span class="logo-web">Web</span>Studio</a
+              >
+              <address class="footer-adress">
+                <ul class="adress-list">
+                  <li class="adress-list__item lst">
+                    <a
+                      href="https://www.google.com.ua/maps/@50.4851493,30.4721233,14z?hl=ru"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="link1"
+                      >м. Київ, пр-т Лесі Українки, 26</a
+                    >
+                  </li>
+                  <li class="adress-list__item lst">
+                    <a href="mailto:info@devstudio.com" class="adress-list__link link"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                  <li class="adress-list__item lst">
+                    <a href="tel:+380961111111" class="adress-list__link link">+38 096 111 11 11</a>
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <div class="social-flex">
+              <p class="social-flex__text">Приєднуйтесь</p>
+              <ul class="team-icons team-icons--basement">
+                <li class="team__wraper footer__wraper">
+                  <a class="social-link footer-link" href="">
+                    <svg class="team-icon footer-icon">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
                 </li>
-                <li class="adress-list__item lst">
-                  <a href="mailto:info@devstudio.com" class="adress-list__link link"
-                    >info@devstudio.com</a
-                  >
+                <li class="team__wraper footer__wraper">
+                  <a class="social-link footer-link" href="">
+                    <svg class="team-icon">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
                 </li>
-                <li class="adress-list__item lst">
-                  <a href="tel:+380961111111" class="adress-list__link link">+38 096 111 11 11</a>
+                <li class="team__wraper footer__wraper">
+                  <a class="social-link footer-link" href="">
+                    <svg class="team-icon">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="team__wraper footer__wraper">
+                  <a class="social-link footer-link" href="">
+                    <svg class="team-icon footer-icon">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
-            </address>
-          </div>
-          <div class="social-flex">
-            <p class="social-flex__text">Приєднуйтесь</p>
-            <ul class="team-icons team-icons--basement">
-              <li class="team__wraper footer__wraper">
-                <a class="social-link footer-link" href="">
-                  <svg class="team-icon footer-icon">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="team__wraper footer__wraper">
-                <a class="social-link footer-link" href="">
-                  <svg class="team-icon">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="team__wraper footer__wraper">
-                <a class="social-link footer-link" href="">
-                  <svg class="team-icon">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="team__wraper footer__wraper">
-                <a class="social-link footer-link" href="">
-                  <svg class="team-icon footer-icon">
-                    <use href="./images/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+            </div>
           </div>
           <div class="subscribe-flex">
             <p class="social-flex__text">Підпишіться на розсилку</p>

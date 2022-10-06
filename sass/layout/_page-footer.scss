@@ -22,6 +22,7 @@
     }
 
 
+
     margin: 0;
     padding: 0;
     list-style: none;
@@ -45,6 +46,13 @@
 
   .subscribe-flex {
     margin-top: 60px;
+
+    @media screen and (min-width:768px) {
+      width: 450px;
+      height: 156px;
+      margin: auto;
+      margin-top: 60px;
+    }
 
     @media screen and (min-width:1200px) {
       margin-left: 93px;
@@ -153,6 +161,11 @@
 .social-flex {
   margin-top: 60px;
 
+  @media screen and (min-width:768px) {
+    margin: 0;
+    margin-left: 165px;
+  }
+
   @media screen and (min-width:1200px) {
     height: 80px;
     margin-left: 70px;
@@ -167,4 +180,11 @@
   line-height: 1.14px;
   text-transform: uppercase;
   color: $primary-bcg;
+}
+
+.tablet-flex {
+  @media screen and (min-width:768px) {
+    display: flex;
+    justify-content: center;
+  }
 }
