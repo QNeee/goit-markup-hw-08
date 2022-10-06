@@ -1,5 +1,9 @@
 .header {
 
+
+
+
+
     border: 1px solid #ececec;
     background-color: $filter-secondarycolor;
 }
@@ -140,9 +144,7 @@
     }
 
     &__item1 {
-        @media screen and (min-width:768px) {
-            margin-top: 10px;
-        }
+
 
         @media screen and (min-width:1200px) {
             margin-top: 0px;

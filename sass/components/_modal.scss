@@ -62,7 +62,7 @@
 
 .form {
     padding: 40px;
-    width: 450px;
+
 
     &__comment-label {
         margin-top: 4px;
@@ -198,6 +198,9 @@
     }
 
     &__title {
+
+        width: 370px;
+        margin: auto;
         font-weight: 700;
         font-size: 20px;
         line-height: 1.15;
@@ -217,14 +220,8 @@
 
 
 .policy {
-    @media screen and (min-width:1200px) {
-        align-items: center;
-    }
-
     text-align: center;
     margin-top: 20px;
-
-
 
 
     &__checkbox:checked+&__icon-check {
@@ -250,28 +247,31 @@
     }
 
     &__label {
-        display: flex;
-        height: 14px;
-        font-size: 12px;
+        @media screen and (max-width:786px) {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+        }
+
+        text-align: center;
         font-weight: 400;
-        line-height: 1.71;
+        font-size: 14px;
+        line-height: 1.17;
         letter-spacing: 0.03em;
         color: #757575;
     }
 
     &__checkbox {
-
         appearance: none;
         font-weight: 400;
         font-size: 14px;
-        line-height: 1.71;
+        line-height: 24px;
         letter-spacing: 0.03em;
         align-items: center;
         color: #757575;
     }
 
     &__icon-check {
-
         position: relative;
         top: 2px;
         display: inline-block;

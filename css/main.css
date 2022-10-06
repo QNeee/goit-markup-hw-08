@@ -234,11 +234,6 @@ ul {
 .contact-list__item1 {
   width: 142px;
 }
-@media screen and (min-width: 768px) {
-  .contact-list__item1 {
-    margin-top: 10px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .contact-list__item1 {
     margin-top: 0px;
@@ -387,7 +382,7 @@ ul {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  background-color: var(--hero-background-color);
+  background-color: #2f303a;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/cap-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1051,7 +1046,6 @@ ul {
 
 .form {
   padding: 40px;
-  width: 450px;
 }
 .form__comment-label {
   margin-top: 4px;
@@ -1154,6 +1148,8 @@ ul {
   color: white;
 }
 .form__title {
+  width: 370px;
+  margin: auto;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -1167,11 +1163,6 @@ ul {
 .policy {
   text-align: center;
   margin-top: 20px;
-}
-@media screen and (min-width: 1200px) {
-  .policy {
-    align-items: center;
-  }
 }
 .policy__checkbox:checked + .policy__icon-check {
   background-image: url(../images/check.svg);
@@ -1191,19 +1182,25 @@ ul {
   color: #212121;
 }
 .policy__label {
-  display: flex;
-  height: 14px;
-  font-size: 12px;
+  text-align: center;
   font-weight: 400;
-  line-height: 1.71;
+  font-size: 14px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (max-width: 786px) {
+  .policy__label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 .policy__checkbox {
   appearance: none;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 24px;
   letter-spacing: 0.03em;
   align-items: center;
   color: #757575;
