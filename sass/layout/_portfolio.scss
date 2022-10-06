@@ -84,6 +84,10 @@
         flex-wrap: wrap;
     }
 
+    &__item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
     @media screen and (min-width:768px) {
         &__item:not(:last-child) {
             margin-right: 30px;
@@ -96,6 +100,14 @@
         }
     }
 
+    @media screen and (min-width:1200px) {
+
+
+        &__item {
+            margin-bottom: 30px;
+            transition: color $wait $caubic, box-shadow $wait $caubic;
+        }
+    }
 
     &__item:hover &-overlay {
         transform: translateY(0);
@@ -170,26 +182,7 @@
         }
     }
 
-    &__item:not(:last-child) {
-        margin-bottom: 30px;
-    }
 
-    @media screen and (min-width:1200px) {
-
-
-        &__item {
-            margin-bottom: 30px;
-            transition: color $wait $caubic, box-shadow $wait $caubic;
-        }
-    }
-
-
-    @media screen and (min-width:1200px) {
-        &__item:nth-child(3n + 3) {
-
-            margin-right: 0px;
-        }
-    }
 
 
 
