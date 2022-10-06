@@ -288,7 +288,7 @@ ul {
   margin-top: 60px;
   display: flex;
 }
-.mob-menu-list__social #skobka {
+.mob-menu-list__social #skobka, .mob-menu-list__social #skobka1, .mob-menu-list__social #skobka2 {
   margin-left: 10px;
   color: rgba(33, 33, 33, 0.2);
   transform: rotate(90deg);
