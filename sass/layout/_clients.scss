@@ -5,10 +5,8 @@
   }
 
   @media screen and (min-width:768px) {
-
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
   }
 
   @media screen and (min-width:1200px) {
@@ -24,8 +22,9 @@
     margin-right: 30px;
   }
 
-  @media screen and (max-width:768px) {
+  @media screen and (max-width:1199px) {
     &__item:nth-child(3n + 3) {
+
       margin-right: 0px;
     }
   }
@@ -42,6 +41,8 @@
     padding: 16px 52px;
 
     @media screen and (min-width:762px) {
+      width: 226px;
+      height: 92px;
       padding: 16px 60px;
     }
 
