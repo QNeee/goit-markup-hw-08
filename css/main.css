@@ -27,11 +27,6 @@ ul {
   padding-right: 15px;
   /* outline: 2px solid tomato; */
 }
-@media screen and (min-width: 320px) {
-  .container {
-    width: 320px;
-  }
-}
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -225,7 +220,6 @@ ul {
   }
 }
 .contact-list__item {
-  margin-right: 30px;
   width: 161px;
 }
 .contact-list__item:last-child {
@@ -272,6 +266,8 @@ ul {
 }
 
 .mob-menu {
+  display: flex;
+  flex-direction: column;
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -281,8 +277,14 @@ ul {
   padding: 15px 10px 48px 40px;
   z-index: 999;
 }
+@media screen and (max-width: 479px) {
+  .mob-menu {
+    left: 0px;
+  }
+}
 .mob-menu-list {
-  margin-bottom: 302px;
+  margin-bottom: auto;
+  height: 50vh;
 }
 .mob-menu-list__social {
   margin-top: 60px;
@@ -304,6 +306,11 @@ ul {
 }
 .mob-menu-list__social .link:hover, .mob-menu-list__social .link:focus {
   color: #2196f3;
+}
+@media screen and (max-width: 479px) {
+  .mob-menu-list__social .link {
+    font-size: 12px;
+  }
 }
 .mob-menu-list__tel {
   font-size: 34px;
@@ -486,6 +493,11 @@ ul {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 479px) {
+  .features__bcg {
+    width: 280px;
+  }
+}
 @media screen and (min-width: 768px) {
   .features__bcg {
     width: 354px;
@@ -526,6 +538,11 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (max-width: 479px) {
+  .features__text {
+    width: 280px;
+  }
 }
 @media screen and (min-width: 768px) {
   .features__text {
@@ -668,6 +685,11 @@ ul {
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
 }
+@media screen and (max-width: 479px) {
+  .team-list__item {
+    width: 320px;
+  }
+}
 @media screen and (min-width: 768px) {
   .team-list__item {
     width: 354px;
@@ -720,6 +742,12 @@ ul {
   color: #ffffff;
 }
 
+@media screen and (max-width: 479px) {
+  .image-thumb {
+    width: 300px;
+    height: 374px;
+  }
+}
 @media screen and (min-width: 768px) {
   .image-thumb {
     width: 354px;
@@ -1288,7 +1316,6 @@ textarea::placeholder {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    height: 1360px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1325,7 +1352,6 @@ textarea::placeholder {
 @media screen and (min-width: 768px) {
   .projects-border {
     width: 354px;
-    height: 146px;
   }
 }
 .projects-border__title {

@@ -131,8 +131,6 @@
 
 
 
-
-        margin-right: 30px;
         width: 161px;
     }
 
@@ -187,6 +185,8 @@
 }
 
 .mob-menu {
+    display: flex;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -196,8 +196,14 @@
     padding: 15px 10px 48px 40px;
     z-index: 999;
 
+    @media screen and (max-width:479px) {
+
+        left: 0px;
+    }
+
     &-list {
-        margin-bottom: 302px;
+        margin-bottom: auto;
+        height: 50vh;
 
 
 
@@ -229,6 +235,10 @@
                 &:hover,
                 &:focus {
                     color: $accent-color;
+                }
+
+                @media screen and (max-width:479px) {
+                    font-size: 12px;
                 }
             }
 
@@ -324,6 +334,7 @@
 
 
 .mob-menu.is-hidden {
+
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
