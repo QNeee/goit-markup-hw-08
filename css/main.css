@@ -231,6 +231,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .contact-list__item1 {
     margin-top: 0px;
+    margin-left: 30px;
   }
 }
 .contact-list__link {
