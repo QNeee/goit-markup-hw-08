@@ -34,7 +34,7 @@
         text-align: center;
         letter-spacing: 0.03em;
         cursor: pointer;
-        transition: color $wait $caubic, box-shadow $wait $caubic;
+        transition: background-color $wait $caubic, color $wait $caubic, box-shadow $wait $caubic;
 
         &:hover,
         &:focus {
