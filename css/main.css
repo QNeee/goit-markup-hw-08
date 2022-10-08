@@ -906,6 +906,11 @@ ul {
   padding-left: 16px;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 479px) {
+  .footer .subscribe-flex__submit-input {
+    width: 290px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer .subscribe-flex__submit-input {
     margin-bottom: 0;
