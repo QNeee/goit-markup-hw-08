@@ -213,16 +213,25 @@
         &__social {
             margin-top: 60px;
             display: flex;
+            flex-wrap: wrap;
+            column-gap: 10px;
 
-            & #skobka,
-            & #skobka1,
-            & #skobka2 {
-                margin-left: 10px;
-                color: #21212133;
-
-
-                transform: rotate(90deg);
+            &-item {
+                position: relative;
             }
+
+            &-item:not(:first-child)::before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: -10px;
+                width: 1px;
+                height: 22px;
+                background-color: rgba(33, 33, 33, 0.2);
+
+            }
+
 
             &-item:not(:last-child) {
                 margin-right: 10px;
@@ -241,7 +250,7 @@
                 }
 
                 @media screen and (max-width:479px) {
-                    font-size: 12px;
+                    font-size: 10px;
                 }
             }
 
@@ -253,6 +262,7 @@
                 font-size: 25px;
             }
 
+            font-weight: 500;
             font-size: 34px;
             line-height: 1.8;
             letter-spacing: 0.02em;
@@ -265,6 +275,7 @@
         }
 
         &__mail {
+            font-weight: 500;
             font-size: 24px;
             line-height: 1.17;
             letter-spacing: 0.02em;

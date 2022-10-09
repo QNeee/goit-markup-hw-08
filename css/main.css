@@ -289,11 +289,21 @@ ul {
 .mob-menu-list__social {
   margin-top: 60px;
   display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
 }
-.mob-menu-list__social #skobka, .mob-menu-list__social #skobka1, .mob-menu-list__social #skobka2 {
-  margin-left: 10px;
-  color: rgba(33, 33, 33, 0.2);
-  transform: rotate(90deg);
+.mob-menu-list__social-item {
+  position: relative;
+}
+.mob-menu-list__social-item:not(:first-child)::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 1px;
+  height: 22px;
+  background-color: rgba(33, 33, 33, 0.2);
 }
 .mob-menu-list__social-item:not(:last-child) {
   margin-right: 10px;
@@ -309,10 +319,11 @@ ul {
 }
 @media screen and (max-width: 479px) {
   .mob-menu-list__social .link {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 .mob-menu-list__tel {
+  font-weight: 500;
   font-size: 34px;
   line-height: 1.8;
   letter-spacing: 0.02em;
@@ -327,6 +338,7 @@ ul {
   color: #2196f3;
 }
 .mob-menu-list__mail {
+  font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.02em;
