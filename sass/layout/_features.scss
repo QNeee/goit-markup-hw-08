@@ -6,6 +6,7 @@
         padding-top: 94px;
         padding-bottom: 94px;
     }
+
 }
 
 .features {
@@ -30,7 +31,8 @@
         justify-content: center;
 
         @media screen and (max-width:479px) {
-            width: 280px;
+            width: 100%;
+
         }
 
         @media screen and (min-width:768px) {
@@ -56,6 +58,11 @@
         color: #212121;
         margin-bottom: 10px;
 
+        @media screen and (max-width:479px) {
+            width: 100%;
+
+        }
+
         @media screen and (min-width:768px) {
             text-align: start;
         }
@@ -74,7 +81,8 @@
         color: $secondary-text;
 
         @media screen and (max-width:479px) {
-            width: 280px;
+            width: 100%;
+
         }
 
         @media screen and (min-width:768px) {

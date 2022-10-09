@@ -186,6 +186,7 @@
 }
 
 .mob-menu {
+
     display: flex;
     flex-direction: column;
     width: 100vw;
@@ -203,10 +204,11 @@
     }
 
     &-list {
-        margin-bottom: auto;
-        height: 50vh;
 
+        &__contacts {
 
+            margin-top: auto;
+        }
 
         &__social {
             margin-top: 60px;
@@ -247,10 +249,14 @@
         }
 
         &__tel {
+            @media screen and (max-width:479px) {
+                font-size: 25px;
+            }
+
             font-size: 34px;
             line-height: 1.8;
             letter-spacing: 0.02em;
-            color: #757575;
+            color: $accent-color;
 
             &:hover,
             &:focus {
